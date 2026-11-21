@@ -5,7 +5,8 @@ rings (coronas) of copies of the shape that can surround it. For polyominoes, po
 polyiamonds, C. S. Kaplan computed Heesch numbers exhaustively ([Heesch numbers of unmarked
 polyforms](https://arxiv.org/abs/2105.09438)); the largest value found is 4. This repository extends that
 computation to **polykites** (unions of kites of the [3.4.6.4] Laves tiling, the family of the "hat"
-monotile), **polydrafters** and **poly-half-Cairos**, using Kaplan's own software.
+monotile), **polydrafters**, and four other grids supported by Kaplan's software (half-Cairo,
+trihex, octasquare, bevelhex), using that software.
 
 The main finding is a **16-kite polykite with Heesch number 4**: it can be surrounded by four
 complete hole-free coronas (61 copies), but not by five. It is the only one among the 15,032,772
@@ -19,7 +20,7 @@ holeless free 16-kites.
 
 *Résumé en français : un polykite de 16 cerfs-volants de nombre de Heesch 4 (quatre couronnes
 complètes, pas cinq), et le recensement des nombres de Heesch des polykites (jusqu'à 16 cerfs-volants),
-des polydrafters (jusqu'à 20) et des poly-demi-Caire (jusqu'à 15). Pas encore vérifié par un tiers ;
+des polydrafters (jusqu'à 20) et de quatre autres grilles (maximum 3). Pas encore vérifié par un tiers ;
 nouveauté non confirmée.*
 
 Interactive figure (French): https://totocaedres.fransys.io/pistes/heesch/notre-travail
@@ -43,6 +44,9 @@ Interactive figure (French): https://totocaedres.fransys.io/pistes/heesch/notre-
 | polykites | 1–16 | 21,144,898 | **4** (one 16-kite) |
 | polydrafters | 1–20 | 9,665,784 | 3 |
 | poly-half-Cairos | 1–15 | 2,644,550 | 1 |
+| poly-(3.6.3.6)-tiles (trihex) | 1–13 | 1,289,367 | 2 |
+| poly-(4.8.8)-tiles (octasquare) | 1–11 | 1,761,672 | 3 |
+| poly-(4.6.12)-tiles (bevelhex) | 1–10 | 2,030,603 | 2 |
 
 Checks: for polykites up to 15 kites, the numbers of holeless shapes and of non-tilers coincide
 exactly with the independent table of [J. Myers](https://www.polyomino.org.uk/mathematics/polyform-tiling/);
