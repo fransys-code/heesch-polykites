@@ -19,7 +19,7 @@ holeless free 16-kites.
 > prior work are welcome: please open an issue.
 
 *Résumé en français : un polykite de 16 cerfs-volants de nombre de Heesch 4 (quatre couronnes
-complètes, pas cinq), et le recensement des nombres de Heesch des polykites (jusqu'à 16 cerfs-volants),
+complètes, pas cinq), et le recensement des nombres de Heesch des polykites (jusqu'à 17 cerfs-volants),
 des polydrafters (jusqu'à 20) et de quatre autres grilles (maximum 3). Pas encore vérifié par un tiers ;
 nouveauté non confirmée.*
 
@@ -41,14 +41,14 @@ Interactive figure (French): https://totocaedres.fransys.io/pistes/heesch/notre-
 
 | Grid | Sizes | Shapes classified | Largest Heesch number |
 |---|---|---|---|
-| polykites | 1–16 | 21,144,898 | **4** (one 16-kite) |
+| polykites | 1–17 | 73,392,986 | **4** (one 16-kite) |
 | polydrafters | 1–20 | 9,665,784 | 3 |
 | poly-half-Cairos | 1–15 | 2,644,550 | 1 |
 | poly-(3.6.3.6)-tiles (trihex) | 1–13 | 1,289,367 | 2 |
 | poly-(4.8.8)-tiles (octasquare) | 1–11 | 1,761,672 | 3 |
 | poly-(4.6.12)-tiles (bevelhex) | 1–10 | 2,030,603 | 2 |
 
-Checks: for polykites up to 15 kites, the numbers of holeless shapes and of non-tilers coincide
+Checks: for polykites up to 17 kites, the numbers of holeless shapes and of non-tilers coincide
 exactly with the independent table of [J. Myers](https://www.polyomino.org.uk/mathematics/polyform-tiling/);
 on 6-cell polyhexes the run reproduces Kaplan's published result.
 
