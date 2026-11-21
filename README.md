@@ -1,0 +1,66 @@
+# A polykite with Heesch number 4, and a census of Heesch numbers of polykites and polydrafters
+
+The *Heesch number* of a shape that does not tile the plane is the largest number of complete
+rings (coronas) of copies of the shape that can surround it. For polyominoes, polyhexes and
+polyiamonds, C. S. Kaplan computed Heesch numbers exhaustively ([Heesch numbers of unmarked
+polyforms](https://arxiv.org/abs/2105.09438)); the largest value found is 4. This repository extends that
+computation to **polykites** (unions of kites of the [3.4.6.4] Laves tiling, the family of the "hat"
+monotile), **polydrafters** and **poly-half-Cairos**, using Kaplan's own software.
+
+The main finding is a **16-kite polykite with Heesch number 4**: it can be surrounded by four
+complete hole-free coronas (61 copies), but not by five. It is the only one among the 15,032,772
+holeless free 16-kites.
+
+> **Status.** Not checked by a third party; novelty not confirmed (unpublished computations may
+> exist). Heesch numbers are computed, as in Kaplan's work, for copies placed on the underlying grid.
+> The four coronas are re-checked by an independent program (`verification/`); the impossibility
+> of a fifth corona relies on the SAT solver used by `heesch-sat`. Corrections and pointers to
+> prior work are welcome: please open an issue.
+
+*Résumé en français : un polykite de 16 cerfs-volants de nombre de Heesch 4 (quatre couronnes
+complètes, pas cinq), et le recensement des nombres de Heesch des polykites (jusqu'à 16 cerfs-volants),
+des polydrafters (jusqu'à 20) et des poly-demi-Caire (jusqu'à 15). Pas encore vérifié par un tiers ;
+nouveauté non confirmée.*
+
+Interactive figure (French): https://totocaedres.fransys.io/pistes/heesch/notre-travail
+
+## Files
+
+- `results/kite16_heesch4.txt` — the shape and its witness patch, in the text format of
+  [heesch-sat](https://github.com/isohedral/heesch-sat): first line, the 16 kite cells (`K x1 y1 x2 y2 …`,
+  kite-grid coordinates); then `~ 4 4 1` (Heesch numbers without/with holes in the outer corona);
+  then the number of copies and, for each copy, its corona index and the affine map
+  `<a,b,c,d,e,f>` : `(x, y) ↦ (a x + b y + c, d x + e y + f)` applied to the cells.
+- `results/census.csv` — per grid and size: number of holeless free shapes, isohedral tilers,
+  inconclusive shapes (anisohedral or aperiodic tilers, or shapes too slow to classify), non-tilers,
+  and the number of non-tilers with each hole-free Heesch number `hc0` … `hc5`.
+- `verification/verify_coronas.py` — independent check of the witness (Python 3, no dependency).
+
+## Census summary
+
+| Grid | Sizes | Shapes classified | Largest Heesch number |
+|---|---|---|---|
+| polykites | 1–16 | 21,144,898 | **4** (one 16-kite) |
+| polydrafters | 1–20 | 9,665,784 | 3 |
+| poly-half-Cairos | 1–15 | 2,644,550 | 1 |
+
+Checks: for polykites up to 15 kites, the numbers of holeless shapes and of non-tilers coincide
+exactly with the independent table of [J. Myers](https://www.polyomino.org.uk/mathematics/polyform-tiling/);
+on 6-cell polyhexes the run reproduces Kaplan's published result.
+
+## Verify
+
+```bash
+python3 verification/verify_coronas.py results/kite16_heesch4.txt
+```
+
+The script checks that all 61 copies are isometric to the shape, that no two copies overlap,
+and that for each k the union of coronas 0..k contains the union of coronas 0..k−1 in its interior
+and has no hole. It rejects deliberately corrupted witnesses (a missing, duplicated or shifted copy).
+
+To recompute: build [heesch-sat](https://github.com/isohedral/heesch-sat) (C++, CryptoMiniSat) and run
+`gen -kite -size 16 -free` then `sat -isohedral -show` on each shape.
+
+## Licence
+
+Code: MIT (`LICENSE`). Data: CC BY 4.0 (`LICENSE-DATA.md`).
