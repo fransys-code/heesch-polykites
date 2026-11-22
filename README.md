@@ -46,9 +46,9 @@ Interactive figure (French): https://totocaedres.fransys.io/pistes/heesch/notre-
 |---|---|---|---|
 | polykites | 1–17 | 73,392,986 | **4** (one 16-kite) |
 | polydrafters | 1–23 | 136,549,231 | **5** (one 22-drafter) |
-| poly-half-Cairos | 1–15 | 2,644,550 | 1 |
-| poly-(3.6.3.6)-tiles (trihex) | 1–13 | 1,289,367 | 2 |
-| poly-(4.8.8)-tiles (octasquare) | 1–11 | 1,761,672 | 3 |
+| poly-half-Cairos | 1–17 | 24,699,020 | 2 |
+| poly-(3.6.3.6)-tiles (trihex) | 1–14 | 5,034,908 | 3 |
+| poly-(4.8.8)-tiles (octasquare) | 1–12 | 9,503,373 | 3 |
 | poly-(4.6.12)-tiles (bevelhex) | 1–10 | 2,030,603 | 2 |
 
 Checks: for polykites up to 17 kites, the numbers of holeless shapes and of non-tilers coincide
