@@ -45,7 +45,7 @@ Interactive figure (French): https://totocaedres.fransys.io/pistes/heesch/notre-
 | Grid | Sizes | Shapes classified | Largest Heesch number |
 |---|---|---|---|
 | polykites | 1–17 | 73,392,986 | **4** (one 16-kite) |
-| polydrafters | 1–22 | 56,414,167 | **5** (one 22-drafter) |
+| polydrafters | 1–23 | 136,549,231 | **5** (one 22-drafter) |
 | poly-half-Cairos | 1–15 | 2,644,550 | 1 |
 | poly-(3.6.3.6)-tiles (trihex) | 1–13 | 1,289,367 | 2 |
 | poly-(4.8.8)-tiles (octasquare) | 1–11 | 1,761,672 | 3 |
