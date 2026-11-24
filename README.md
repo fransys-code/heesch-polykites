@@ -23,7 +23,7 @@ the 15,032,772 holeless free 16-kites.
 
 *Résumé en français : un polydrafter de 22 drafters de nombre de Heesch 5 (cinq couronnes, pas six) et un polykite de 16 cerfs-volants de nombre de Heesch 4 (quatre couronnes
 complètes, pas cinq), et le recensement des nombres de Heesch des polykites (jusqu'à 17 cerfs-volants),
-des polydrafters (jusqu'à 24) et de quatre autres grilles (maximum 3). Pas encore vérifié par un tiers ;
+des polydrafters (jusqu'à 25) et de quatre autres grilles (maximum 3). Pas encore vérifié par un tiers ;
 nouveauté non confirmée.*
 
 Interactive figure (French): https://totocaedres.fransys.io/pistes/heesch/notre-travail
@@ -45,7 +45,7 @@ Interactive figure (French): https://totocaedres.fransys.io/pistes/heesch/notre-
 | Grid | Sizes | Shapes classified | Largest Heesch number |
 |---|---|---|---|
 | polykites | 1–17 | 73,392,986 | **4** (one 16-kite) |
-| polydrafters | 1–24 | 330,973,866 | **5** (one 22-drafter) |
+| polydrafters | 1–25 | 803,245,135 | **5** (one 22-drafter) |
 | poly-half-Cairos | 1–17 | 24,699,020 | 2 |
 | poly-(3.6.3.6)-tiles (trihex) | 1–14 | 5,034,908 | 3 |
 | poly-(4.8.8)-tiles (octasquare) | 1–12 | 9,503,373 | 3 |
