@@ -45,11 +45,16 @@ Interactive figure (French): https://totocaedres.fransys.io/pistes/heesch/notre-
 | Grid | Sizes | Shapes classified | Largest Heesch number |
 |---|---|---|---|
 | polykites | 1–17 | 73,392,986 | **4** (one 16-kite) |
-| polydrafters | 1–24 | 330,973,734 | **5** (one 22-drafter) |
+| polydrafters | 1–24 | 330,973,866 | **5** (one 22-drafter) |
 | poly-half-Cairos | 1–17 | 24,699,020 | 2 |
 | poly-(3.6.3.6)-tiles (trihex) | 1–14 | 5,034,908 | 3 |
 | poly-(4.8.8)-tiles (octasquare) | 1–12 | 9,503,373 | 3 |
 | poly-(4.6.12)-tiles (bevelhex) | 1–10 | 2,030,603 | 2 |
+
+Erratum (24 November 2026): the first version of the census missed 132 very elongated polydrafters
+(1 of 23 drafters, 131 of 24 drafters), for which the classification program stopped without output.
+They have been classified separately: all have Heesch number 0. The counts above and in
+`results/census.csv` are corrected; no other grid or size is affected, and no result changes.
 
 Checks: for polykites up to 17 kites, the numbers of holeless shapes and of non-tilers coincide
 exactly with the independent table of [J. Myers](https://www.polyomino.org.uk/mathematics/polyform-tiling/);
